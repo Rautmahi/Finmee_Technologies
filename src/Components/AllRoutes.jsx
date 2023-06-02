@@ -15,8 +15,8 @@ const AllRoutes = () => {
       <Navbar/>
       <Box>
         <Home/>
-        {/* <About/>
-        <Skills/>
+        <About/>
+        {/* <Skills/>
         <Projects/>
         <Contact/> */}
       </Box>

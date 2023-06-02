@@ -36,7 +36,8 @@ const Home = () => {
                   (window.location.href =
                     "https://drive.google.com/file/d/1FK4oPRvCkRpYRRQMBDmpR1eUQZT1eLjX/view?usp=drive_link")
                 }
-                download="Mahesh_Raut_Resume"          >
+                download="Mahesh_Raut_Resume"
+          >
                 View Resume
               </a>
             </Button>
