@@ -5,8 +5,8 @@ import profileimg from "../Data/profile.png.jpg"
 const About = () => {
   return (
 
-    <Stack id="about" pt="8%" pb="8%" bg="#41584d">
-      <Text color="black" fontWeight="bold" fontSize="30px">
+    <Stack  pt="2%" pb="8%" bg="#41584d">
+      <Text color="grey" fontWeight="bold" fontSize="20px">
         ABOUT ME
       </Text>
       <Heading>WHO AM I ?</Heading>
