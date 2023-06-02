@@ -15,10 +15,10 @@ const AllRoutes = () => {
       <Navbar/>
       <Box>
         <Home/>
-        <About/>
+        {/* <About/>
         <Skills/>
         <Projects/>
-        <Contact/>
+        <Contact/> */}
       </Box>
     </Stack>
   )

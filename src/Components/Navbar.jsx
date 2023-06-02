@@ -29,7 +29,7 @@ const Navbar = () => {
   };
  
   return (
-    <Stack style={navstyle} bg="#1B2430" p={2} color="white">
+    <Stack style={navstyle} bg="#233029" p={2} color="white">
       {/* for small screen */}
       <Show below="lg">
         <MdMenu ref={btnRef} onClick={onOpen} fontSize="25px" />

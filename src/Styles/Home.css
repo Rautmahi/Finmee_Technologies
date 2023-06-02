@@ -1,0 +1,13 @@
+#home {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqhytUw3XgCfKfL8xS7pXUI5V-J4-lP6wIR1xqPLl1YKG7hac5F9IQdYQQM-SvPFIo9b4&usqp=CAU");
+     background-repeat: no-repeat; 
+    background-size: cover;
+  }
+  
+  #txt {
+    color: rgb(85, 207, 15);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ef1111;
+    text-decoration: underline;
+  }
+
