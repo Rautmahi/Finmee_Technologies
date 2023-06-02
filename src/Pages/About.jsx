@@ -5,7 +5,7 @@ import profileimg from "../Data/profile.png.jpg"
 const About = () => {
   return (
 
-    <Stack  pt="2%" pb="8%" bg="#41584d">
+    <Stack id="about" pt="2%" pb="8%" bg="#41584d">
       <Text color="grey" fontWeight="bold" fontSize="20px">
         ABOUT ME
       </Text>

@@ -15,7 +15,7 @@ import { BsPuzzle } from "react-icons/bs";
 const Skills = () => {
   return (
     <Box>
-    <Stack pt={10} pb="10%" spacing={["40%", "5%", "5%", "3%"]}>
+    <Stack  id="skill" pt={10} pb="10%" spacing={["40%", "5%", "5%", "3%"]}>
       <Stack>
         <Text color="grey" fontWeight="bold" fontSize="20px">
           MY - SKILLS

@@ -17,8 +17,8 @@ const AllRoutes = () => {
         <Home/>
         <About/>
        <Skills/>
-         {/* <Projects/>
-        <Contact/> */}
+        <Projects/>
+          <Contact/>
       </Box>
     </Stack>
   )
