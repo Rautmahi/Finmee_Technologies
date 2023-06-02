@@ -10,19 +10,22 @@ import {
 import React from "react";
 import { IoIosCall, IoMdMail, IoLogoLinkedin } from "react-icons/io";
 import { BsGithub } from "react-icons/bs";
-import "../Styles/Contact.css";
+
 
 const Contact = () => {
   const iconstyle = {
     color: "white",
     padding: 3,
   };
+
   const iconhover = {
     borderRadius: "30% 5% 30% 5%",
     backgroundColor: "#41584d",
     color: "black",
     cursor: "pointer",
-  };
+  }
+
+  
   return (
     <Stack id="contact" pb={4} pt={8} bg="#131c17" spacing={5}>
       <Text color="gray" fontWeight="bold">

@@ -14,8 +14,7 @@ import {
 import { MdMenu } from "react-icons/md";
 import { Link } from "react-scroll";
 import "../Styles/Navbar.css";
-import resume from "../Data/Mahesh_Resume.pdf"
-
+import resume from "../Data/Mahesh_Resume.pdf";
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -27,7 +26,8 @@ const Navbar = () => {
     width: "100%",
     zIndex: 2,
   };
- 
+
+  
   return (
     <Stack style={navstyle} bg="#233029" p={2} color="white">
       {/* for small screen */}
@@ -41,7 +41,7 @@ const Navbar = () => {
           size="xs"
         >
           <DrawerContent bg="whitesmoke">
-          <DrawerCloseButton />
+            <DrawerCloseButton />
             <SimpleGrid
               columns={1}
               align="center"
@@ -71,10 +71,13 @@ const Navbar = () => {
                   Contact
                 </Link>
                 <Button variant="link" color="black">
-                  <a 
-                  href={resume} 
-                  onClick={()=>window.location.href="https://drive.google.com/file/d/1FK4oPRvCkRpYRRQMBDmpR1eUQZT1eLjX/view?usp=drive_link"}
-                 download="Mahesh_Raut_Resume" 
+                  <a
+                    href={resume}
+                    onClick={() =>
+                      (window.location.href =
+                        "https://drive.google.com/file/d/1FK4oPRvCkRpYRRQMBDmpR1eUQZT1eLjX/view?usp=drive_link")
+                    }
+                    download="Mahesh_Raut_Resume"
                   >
                     <Flex>
                       <Text>Resume</Text>
@@ -121,16 +124,21 @@ const Navbar = () => {
               Contact
             </Link>
             <Button variant="link" color="white">
-                  <a 
-                  href={resume} 
-                  onClick={()=>window.location.href="https://drive.google.com/file/d/1FK4oPRvCkRpYRRQMBDmpR1eUQZT1eLjX/view"}
-                 download="Mahesh_Raut_Resume"
-                  >
-                    <Flex>
-                      <Text fontSize="20px" fontWeight="bold">Resume</Text>
-                    </Flex>
-                  </a>
-                </Button>
+              <a
+                href={resume}
+                onClick={() =>
+                  (window.location.href =
+                    "https://drive.google.com/file/d/1FK4oPRvCkRpYRRQMBDmpR1eUQZT1eLjX/view")
+                }
+                download="Mahesh_Raut_Resume"
+              >
+                <Flex>
+                  <Text fontSize="20px" fontWeight="bold">
+                    Resume
+                  </Text>
+                </Flex>
+              </a>
+            </Button>
           </Flex>
         </SimpleGrid>
       </Show>
@@ -139,4 +147,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

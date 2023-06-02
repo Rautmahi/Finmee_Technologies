@@ -1,10 +1,10 @@
-import { Box, Flex, Heading, Img, Stack, Text } from '@chakra-ui/react'
-import React from 'react'
+import { Box, Flex, Heading, Img, Stack, Text } from "@chakra-ui/react";
+import React from "react";
 import { ImQuotesLeft, ImQuotesRight } from "react-icons/im";
-import profileimg from "../Data/profile.png.jpg"
+import profileimg from "../Data/profile.png.jpg";
 const About = () => {
   return (
-
+    
     <Stack id="about" pt="2%" pb="8%" bg="#41584d">
       <Text color="grey" fontWeight="bold" fontSize="20px">
         ABOUT ME
@@ -32,7 +32,11 @@ const About = () => {
             <Text>As you know I'm Mahesh Raut.</Text>
 
             <Text>
-            I am self-motivated, hardworking aspiring full-stack web developer with a passion for developing web applications. I love to build websites/applications that serves the world. and always want to enhance my knowledge & adpot new things that make impact on people.
+              I am self-motivated, hardworking aspiring full-stack web developer
+              with a passion for developing web applications. I love to build
+              websites/applications that serves the world. and always want to
+              enhance my knowledge & adpot new things that make impact on
+              people.
             </Text>
             <Text fontSize="40px" textAlign="center" color="lightpink" ml="90%">
               <ImQuotesRight />
@@ -48,7 +52,7 @@ const About = () => {
         />
       </Flex>
     </Stack>
-  )
-}
+  );
+};
 
-export default About
+export default About;
