@@ -1,4 +1,3 @@
-
 import React from "react";
 import {
   SimpleGrid,
@@ -14,24 +13,24 @@ import {
 } from "@chakra-ui/react";
 import { MdMenu } from "react-icons/md";
 import { Link } from "react-scroll";
+import "../Styles/Navbar.css";
+import resume from "../Data/Mahesh_Resume.pdf"
 
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
-  //const [styletop, setstyletop] = useState("0");
   const navstyle = {
     position: "fixed",
-    //top: styletop,
     display: "block",
     overflow: "hidden",
-    // transition: "top 0.3s",
     width: "100%",
     zIndex: 2,
   };
  
   return (
     <Stack style={navstyle} bg="#1B2430" p={2} color="white">
+      {/* for small screen */}
       <Show below="lg">
         <MdMenu ref={btnRef} onClick={onOpen} fontSize="25px" />
         <Drawer
@@ -66,22 +65,31 @@ const Navbar = () => {
                   Skills
                 </Link>
                 <Link activeClass="active1" smooth spy to="projects">
-                  Project
+                  Projects
                 </Link>
                 <Link activeClass="active1" smooth spy to="contact">
                   Contact
                 </Link>
                 <Button variant="link" color="black">
-                 Resume
+                  <a 
+                  href={resume} 
+                  onClick={()=>window.location.href="https://drive.google.com/file/d/1FK4oPRvCkRpYRRQMBDmpR1eUQZT1eLjX/view?usp=drive_link"}
+                 download="Mahesh_Raut_Resume" 
+                  >
+                    <Flex>
+                      <Text>Resume</Text>
+                    </Flex>
+                  </a>
                 </Button>
               </Flex>
             </SimpleGrid>
           </DrawerContent>
         </Drawer>
       </Show>
+
+      {/* for large screen */}
       <Show above="lg">
         <SimpleGrid
-          // columns={1}
           align="center"
           justifyContent="right"
           justify="space-between"
@@ -107,13 +115,21 @@ const Navbar = () => {
               Skills
             </Link>
             <Link activeClass="active" smooth spy to="projects">
-              Project
+              Projects
             </Link>
             <Link activeClass="active" smooth spy to="contact">
               Contact
             </Link>
             <Button variant="link" color="white">
-            Resume
+                  <a 
+                  href={resume} 
+                  onClick={()=>window.location.href="https://drive.google.com/file/d/1FK4oPRvCkRpYRRQMBDmpR1eUQZT1eLjX/view"}
+                 download="Mahesh_Raut_Resume"
+                  >
+                    <Flex>
+                      <Text fontSize="20px" fontWeight="bold">Resume</Text>
+                    </Flex>
+                  </a>
                 </Button>
           </Flex>
         </SimpleGrid>

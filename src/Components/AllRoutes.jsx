@@ -1,4 +1,4 @@
-import { Box, Divider, Stack } from '@chakra-ui/react'
+import { Box, Stack } from '@chakra-ui/react'
 import React from 'react'
 import Home from '../Pages/Home'
 import About from '../Pages/About'
